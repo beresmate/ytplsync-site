@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ytplsync privacy policy</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+  <h1>Privacy policy</h1>
+  <p class="lead">ytplsync · last updated 9 November 2026</p>
+
+  <p>
+    ytplsync is a personal desktop tool that keeps a FreeTube playlist in sync with a playlist
+    on the user's YouTube account. It runs entirely on the user's own computer. There is no
+    ytplsync server, and the developer receives no data of any kind.
+  </p>
+
+  <h2>YouTube API Services</h2>
+  <p>
+    ytplsync uses YouTube API Services. By using it you also agree to the
+    <a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a>, and Google's handling
+    of your data is described in the
+    <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.
+  </p>
+
+  <h2>What data is accessed</h2>
+  <p>After you sign in with Google and grant access, ytplsync uses the YouTube Data API to:</p>
+  <ul>
+    <li>list your playlists, to find the one you configured by name;</li>
+    <li>create that playlist (private) if it doesn't exist;</li>
+    <li>read the videos in that playlist, and fetch public details of those videos (title, channel, length, publish date);</li>
+    <li>add and remove videos in that playlist.</li>
+  </ul>
+  <p>It does not access your other playlists' contents, subscriptions, comments, watch history, email address or any other personal data.</p>
+
+  <h2>Where data is stored</h2>
+  <p>Everything stays on your computer:</p>
+  <ul>
+    <li>the sign-in token Google issues, stored in your user profile folder;</li>
+    <li>the list of video IDs from the last sync, used to tell additions from removals;</li>
+    <li>FreeTube's own playlist file, which ytplsync updates, and local backups of it.</li>
+  </ul>
+
+  <h2>Sharing</h2>
+  <p>
+    No data is sold, shared with, or sent to anyone. The only network traffic is between your
+    computer and Google's servers, to sign in and to make the API calls listed above.
+  </p>
+
+  <h2>Removing access and data</h2>
+  <p>
+    You can revoke ytplsync's access to your Google account at any time on the
+    <a href="https://myaccount.google.com/permissions">Google Account permissions page</a>.
+    To remove the locally stored data, delete the <code>%APPDATA%\ytplsync</code> folder.
+  </p>
+
+  <h2>Changes</h2>
+  <p>If this policy changes, the updated version will be published on this page with a new date.</p>
+
+  <h2>Contact</h2>
+  <p>Questions: contact <a href="https://github.com/beresmate">beresmate on GitHub</a>.</p>
+
+  <footer><a href="./">ytplsync</a></footer>
+</main>
+</body>
+</html>
